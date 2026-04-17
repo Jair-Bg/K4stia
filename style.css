@@ -1,0 +1,362 @@
+:root {
+  --bg: #f4f4f4;
+  --surface: #ffffff;
+  --border: #d9d9d9;
+  --text: #1f1f1f;
+  --muted: #666666;
+  --primary: #1f4e79;
+  --primary-dark: #163956;
+  --success: #1f7a3d;
+  --danger: #b23a48;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a,
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-search-form {
+  display: grid;
+  grid-template-columns: minmax(260px, 420px) auto auto;
+  gap: 0.6rem;
+  align-items: center;
+  flex: 1;
+  justify-content: end;
+}
+
+.markets {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.markets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+}
+
+.section-subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.hero-metrics article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.9rem;
+}
+
+.hero-metrics strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.hero-metrics span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.search-panel,
+.card,
+.loading-state,
+.empty-state {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.search-panel {
+  padding: 1rem;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border);
+  padding: 0 0.75rem;
+  background: var(--surface);
+}
+
+.nav-search-wrap {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(255, 255, 255, 0.96);
+}
+
+.search-input-wrap input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 0.8rem 0;
+  background: transparent;
+}
+
+.search-btn,
+.refresh-btn,
+.clear-btn {
+  border: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+}
+
+.search-btn,
+.refresh-btn {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.search-btn:hover,
+.refresh-btn:hover {
+  background: var(--primary-dark);
+}
+
+.clear-btn {
+  background: #fff;
+  color: var(--text);
+}
+
+.markets-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.filter-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  padding: 0.6rem 0.9rem;
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.results-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.results-summary,
+.status-banner {
+  color: var(--muted);
+}
+
+.status-banner {
+  min-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.status-banner.success {
+  color: var(--success);
+}
+
+.status-banner.error {
+  color: var(--danger);
+}
+
+.markets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.card-category {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  color: var(--muted);
+}
+
+.card-volume {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.outcomes {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.outcome {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.outcome-label-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.outcome-track {
+  height: 8px;
+  background: #ececec;
+}
+
+.outcome-bar {
+  height: 100%;
+  background: var(--primary);
+}
+
+.trade-buttons,
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trade-buttons {
+  margin-top: auto;
+}
+
+.trade-btn,
+.card-action-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0.6rem 0.85rem;
+}
+
+.trade-btn.yes {
+  color: var(--success);
+}
+
+.trade-btn.no {
+  color: var(--danger);
+}
+
+.loading-state,
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 0.75rem;
+  border: 3px solid #dddddd;
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 800px) {
+  .markets-header,
+  .results-toolbar {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .site-nav {
+    padding: 1rem;
+  }
+
+  .nav-search-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .markets {
+    padding: 1.5rem 1rem 2rem;
+  }
+}
