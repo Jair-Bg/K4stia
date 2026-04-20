@@ -1,0 +1,114 @@
+{
+  "markets": [
+    {
+      "id": 1,
+      "question": "Will Bitcoin close above $100k this month?",
+      "category": "crypto",
+      "volume": 12500000,
+      "description": "Tracking BTC price movement by end of month.",
+      "outcomes": [
+        { "label": "Yes", "pct": 62 },
+        { "label": "No", "pct": 38 }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Will the next US election see record turnout?",
+      "category": "politics",
+      "volume": 8400000,
+      "description": "Predicted voter participation in the upcoming election cycle.",
+      "outcomes": [
+        { "label": "Yes", "pct": 47 },
+        { "label": "No", "pct": 53 }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Will the S&P 500 hit 6000 before year end?",
+      "category": "finance",
+      "volume": 5200000,
+      "description": "US equities benchmark milestone prediction.",
+      "outcomes": [
+        { "label": "Yes", "pct": 71 },
+        { "label": "No", "pct": 29 }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Will Man United finish top 4 this season?",
+      "category": "sports",
+      "volume": 3100000,
+      "description": "English Premier League top-four finish prediction.",
+      "outcomes": [
+        { "label": "Yes", "pct": 34 },
+        { "label": "No", "pct": 66 }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Will Ethereum flip Bitcoin in market cap by 2026?",
+      "category": "crypto",
+      "volume": 9800000,
+      "description": "The Flippening — will ETH overtake BTC this cycle?",
+      "outcomes": [
+        { "label": "Yes", "pct": 28 },
+        { "label": "No", "pct": 72 }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Will Kenya's inflation drop below 5% this quarter?",
+      "category": "finance",
+      "volume": 420000,
+      "description": "Kenya National Bureau of Statistics CPI tracking.",
+      "outcomes": [
+        { "label": "Yes", "pct": 55 },
+        { "label": "No", "pct": 45 }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Will the African Union summit produce a new trade deal?",
+      "category": "world",
+      "volume": 670000,
+      "description": "Tracking AU diplomatic outcomes for Q2.",
+      "outcomes": [
+        { "label": "Yes", "pct": 41 },
+        { "label": "No", "pct": 59 }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Will Lionel Messi retire before end of 2025?",
+      "category": "sports",
+      "volume": 7200000,
+      "description": "Inter Miami contract and retirement speculation.",
+      "outcomes": [
+        { "label": "Yes", "pct": 19 },
+        { "label": "No", "pct": 81 }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Will the Fed cut rates twice before December?",
+      "category": "finance",
+      "volume": 11300000,
+      "description": "Federal Reserve monetary policy prediction market.",
+      "outcomes": [
+        { "label": "Yes", "pct": 63 },
+        { "label": "No", "pct": 37 }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Will a new AI model beat GPT-4 on all benchmarks?",
+      "category": "world",
+      "volume": 4500000,
+      "description": "Tracking AI benchmark leadership through 2025.",
+      "outcomes": [
+        { "label": "Yes", "pct": 88 },
+        { "label": "No", "pct": 12 }
+      ]
+    }
+  ]
+}
