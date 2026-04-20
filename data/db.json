@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "question": "Will the next US election see record turnout?",
+      "question": "Will the next election see record turnout?",
       "category": "politics",
       "volume": 8400000,
       "description": "Predicted voter participation in the upcoming election cycle.",
@@ -79,7 +79,7 @@
     },
     {
       "id": 8,
-      "question": "Will Lionel Messi retire before end of 2025?",
+      "question": "Will Lionel Messi retire before end of 2026?",
       "category": "sports",
       "volume": 7200000,
       "description": "Inter Miami contract and retirement speculation.",

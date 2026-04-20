@@ -16,15 +16,15 @@ const FALLBACK_MARKETS = [
     question: "Will Bitcoin close above $100k this month?",
     category: "crypto",
     volume: 12500000,
-    description: "Fallback data — run: npx json-server db.json --port 3001",
+    description: "Bitcoin bull run",
     outcomes: [{ label: "Yes", pct: 62 }, { label: "No", pct: 38 }]
   },
   {
     id: "fallback-2",
-    question: "Will the S&P 500 hit 6000 before year end?",
-    category: "finance",
+    question: "Will Kasongo be impeached before the end of 2026?",
+    category: "politics",
     volume: 5200000,
-    description: "Fallback data — run: npx json-server db.json --port 3001",
+    description: "Kenyan politics",
     outcomes: [{ label: "Yes", pct: 71 }, { label: "No", pct: 29 }]
   },
   {
@@ -32,7 +32,7 @@ const FALLBACK_MARKETS = [
     question: "Will Man United finish top 4 this season?",
     category: "sports",
     volume: 3100000,
-    description: "Fallback data — run: npx json-server db.json --port 3001",
+    description: "English premier league prediction of the 25/26 season",
     outcomes: [{ label: "Yes", pct: 34 }, { label: "No", pct: 66 }]
   }
 ];
@@ -217,5 +217,4 @@ el.grid.addEventListener("click", (e) => {
   alert(`You clicked ${btn.dataset.action.toUpperCase()} on market #${btn.dataset.id}`);
 });
 
-/* ── INIT ── */
 load();
