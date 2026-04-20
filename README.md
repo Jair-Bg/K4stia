@@ -1,12 +1,4 @@
-# Kastia — School Project Setup
-
-## Files
-- `index.html` — the page
-- `style.css`  — all styles
-- `index.js`   — app logic
-- `db.json`    — your local fake API data
-
----
+# Kastia 
 
 ## How to run
 
